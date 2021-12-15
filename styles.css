@@ -1,0 +1,123 @@
+@font-face {
+    font-family: Roboto;
+    src: url('Roboto.tff');
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    color: #fff;
+}
+
+body {
+    height: 125vh;
+    background-image: url("img/background.png");
+    background-size: cover;
+    font-family: "Avenir Next", "Roboto", san-serif;
+    margin-top: 5rem;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+form {
+    padding-bottom: 1.5rem;
+}
+
+button {
+    background-color: #4995ce;
+    width: 25.4rem;
+    height: 3rem;
+}
+
+#navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+}
+
+#navbar * {
+    display: inline;
+    padding-top: .9rem;
+}
+
+#navbar li {
+    margin: 2.25rem;
+}
+
+#navbar a {
+    text-decoration: none;
+}
+
+#logo {
+    float: left;
+    width: 27%;
+    margin: 3rem;
+}
+
+#icon {
+    float: right;
+    width: 10%;
+}
+
+#main-content{
+    padding: 12rem 7.75rem 0 5rem;
+}
+
+#content {
+    float: left;
+    padding: 2rem 8rem 0 5rem;
+    margin-top: none;
+    width: 22rem;
+    font-weight:lighter;
+}
+
+#signup_form {
+    float: right;
+    padding-right: 2rem;
+}
+
+#signup_form h3 {
+    font-size: .75rem;
+    text-align: center;
+    font-weight: 500;
+    padding-bottom: 1.5rem;
+}
+
+#signup_form input {
+    background-color: rgba(255, 255, 255, .1);
+    width: 24rem;
+    height: 3rem;
+    padding: .5rem;
+}
+
+::placeholder {
+    color: #fff;
+}
+
+#fa-eye {
+    margin-left: -30px; 
+    cursor: pointer;
+}
+
+#terms_info{
+    font-size: .75rem;
+    text-align: center;
+    color: grey;
+    padding: 0 5rem 0 5rem
+}
+
+#terms_info a{
+    text-decoration: none;
+    display: block;
+}
+
+
+
+
+

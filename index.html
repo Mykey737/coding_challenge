@@ -5,12 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
     <title>Mike Pena - Coding Challenge</title>
 </head>
 <body>
     <div id="navbar">
-        <div id="logo">Stamp</div>
-        <div id="menu">
+        <div id="logo"><img src="img/logo.png"></div>
+        <div id="nav">
             <ul>
                 <li>
                     <a href="#">About</a>
@@ -36,15 +37,48 @@
             </div>
         </div>
         <div id="signup_form">
+            <h3>SIGN UP FOR FREE</h3>
             <form action="/" method="post">
-                Name : <input type = "text" name = "user_id" />
-                <br />
-                Email : <input type = "text" name = "user_id" />
-                <br />
-                Password: <input type = "password" name = "password" />
+                <div class="form-input">
+                    <input type="text" name="user_id" placeholder="Name" />
+                </div>
+                <div class="form-input">
+                    <input type="text" name="user_id" placeholder="Email" />
+                </div>
+                <div class="form-input">
+                <input type="password" name="password" placeholder="Password" />
+                <i class="far fa-eye" id="togglePassword"></i>
+                </div>
+                <div class="btn">
+                    <button id="signup_btn" type="submit" value="submit">Sign up ></button>
+                </div>
             </form>
+            <div id="terms_info">
+                By clicking "Sign up" I agree to our <a href="#">Terms of Service</a>
+            </div>
 
         </div>
     </div>
+    <div id="footer">
+        <div id="copyright">
+            ©2016 Stamp. All Rights Reserved
+        </div>
+        <div id="footer-link">
+            <ul>
+                <li>
+                    <a href="#">CONTACT</a>
+                </li>
+                <li>
+                    <a href="#">HELP</a>
+                </li>
+                <li>
+                    <a href="#">TERMS OF SERVICE</a>
+                </li>
+                <li>
+                    <a href="#">PRIVACY POLICY</a>
+                </li>
+            </ul>
+        </div>
+    </div>    
 </body>
 </html>
