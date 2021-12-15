@@ -1,3 +1,37 @@
+/* Media Query for Mobile Devices */
+@media (max-width: 480px) {
+    #navbar {
+        height: 5rem;
+        width: 100%;
+        align-items: center;
+    }
+
+    #logo {
+        width: 100%;
+        float: left;
+        margin-top: 2rem;
+    }
+
+    #logo img{
+        height: 6rem;
+    }
+
+    #nav {
+        visibility: hidden;
+    }
+
+    #icon {
+        float: right;
+        width: 100%;
+        text-align: right;  
+    }
+
+    #signup_form {
+        align-self: center;
+    }
+
+} 
+
 @font-face {
     font-family: Roboto;
     src: url('/roboto/');
@@ -10,16 +44,12 @@
 }
 
 body {
-    height: 100%;
+    height: 125vh;
     background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("img/background.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     font-family: "Roboto", san-serif;
-}
-
-h1 {
-    font-size: 3rem;
 }
 
 form {
@@ -28,8 +58,9 @@ form {
 
 button {
     background-color: #4995ce;
-    width: 25.4rem;
-    height: 3rem;
+    width: 33.4rem;
+    height: 4.5rem;
+    font-size: 1.2rem;
 }
 
 #navbar {
@@ -49,6 +80,7 @@ button {
 
 #navbar a {
     text-decoration: none;
+    font-size: 1.5rem;
 }
 
 #logo {
@@ -58,22 +90,36 @@ button {
     padding-bottom: 1rem;
 }
 
+#nav {
+    width: 47%;
+}
+
 #icon {
     float: right;
-    width: 10%;
+    width: 18%;
+    text-align: right;
+}
+
+.fa-bars {
+    font-size: 1.7rem;
 }
 
 #main-content{
-    padding: 13rem 7.75rem 0 5rem;
+    padding: 13rem 5rem 0 5rem;
     display: block; 
 }
 
 #content {
     float: left;
-    padding: 2rem 8rem 0 5rem;
+    padding: 2rem 5rem 0 5rem;
     margin-top: none;
-    width: 22rem;
+    width: 30rem;
     font-weight:lighter;
+    font-size: 1.25rem;
+}
+h1 {
+    font-size: 4.5rem;
+    padding-bottom: 1.4rem;
 }
 
 #signup_form {
@@ -82,17 +128,18 @@ button {
 }
 
 #signup_form h3 {
-    font-size: .75rem;
+    font-size: 1.25rem;
     text-align: center;
-    font-weight: 500;
+    font-weight: 400;
     padding-bottom: 1.5rem;
 }
 
 #signup_form input {
     background-color: rgba(255, 255, 255, .1);
-    width: 24rem;
-    height: 3rem;
+    width: 32rem;
+    height: 4rem;
     padding: .5rem;
+    font-size: 1.2rem
 }
 
 ::placeholder {
@@ -105,7 +152,7 @@ button {
 }
 
 #terms_info{
-    font-size: .75rem;
+    font-size: 1.1rem;
     text-align: center;
     color: grey;
     padding: 0 5rem 0 5rem
@@ -117,7 +164,7 @@ button {
 }
 
 #footer {
-    margin: 35rem 5rem 0 4rem;
+    margin: 45rem 2rem 0 4rem;
 }
 
 #footer * {
@@ -127,14 +174,15 @@ button {
 
 #copyright {
     float: left;
-    font-size: small;
+    font-size: 1rem;
     text-align: left;
-    width: 30%
+    width: 30%;
 }
 
 #footer_nav {
     float: right;
     text-align: right;
+    width: 40rem;
     margin-left: 5rem;
 }
 
@@ -144,7 +192,7 @@ button {
 
 #footer_nav a {
     text-decoration: none;
-    font-size: 90%;
+    font-size: 1.2rem;
 }
 
 
