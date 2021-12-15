@@ -1,6 +1,6 @@
 @font-face {
     font-family: Roboto;
-    src: url('Roboto.tff');
+    src: url('/roboto/');
 }
 
 * {
@@ -10,11 +10,12 @@
 }
 
 body {
-    height: 125vh;
-    background-image: url("img/background.png");
+    height: 100%;
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("img/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    font-family: "Avenir Next", "Roboto", san-serif;
-    margin-top: 5rem;
+    font-family: "Roboto", san-serif;
 }
 
 h1 {
@@ -32,10 +33,6 @@ button {
 }
 
 #navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     height: 5rem;
     display: flex;
     align-items: center;
@@ -56,8 +53,9 @@ button {
 
 #logo {
     float: left;
-    width: 27%;
-    margin: 3rem;
+    width: 29%;
+    padding-left: 2rem;
+    padding-bottom: 1rem;
 }
 
 #icon {
@@ -66,7 +64,8 @@ button {
 }
 
 #main-content{
-    padding: 12rem 7.75rem 0 5rem;
+    padding: 13rem 7.75rem 0 5rem;
+    display: block; 
 }
 
 #content {
@@ -79,7 +78,7 @@ button {
 
 #signup_form {
     float: right;
-    padding-right: 2rem;
+    padding-right: 3.5rem;
 }
 
 #signup_form h3 {
@@ -97,7 +96,7 @@ button {
 }
 
 ::placeholder {
-    color: #fff;
+    color: rgba(255, 255, 255, .6);
 }
 
 #fa-eye {
@@ -115,6 +114,37 @@ button {
 #terms_info a{
     text-decoration: none;
     display: block;
+}
+
+#footer {
+    margin: 35rem 5rem 0 4rem;
+}
+
+#footer * {
+    display: inline;
+    padding: 0 0 2rem 0;
+}
+
+#copyright {
+    float: left;
+    font-size: small;
+    text-align: left;
+    width: 30%
+}
+
+#footer_nav {
+    float: right;
+    text-align: right;
+    margin-left: 5rem;
+}
+
+#footer_nav li {
+    margin: 1.5rem;
+}
+
+#footer_nav a {
+    text-decoration: none;
+    font-size: 90%;
 }
 
 
