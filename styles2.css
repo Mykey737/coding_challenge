@@ -1,0 +1,274 @@
+@font-face {
+    font-family: Roboto;
+    src: url('/roboto/Roboto-Regular.ttf');
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    color: #fff;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: auto;
+    background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("img/background.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Roboto", san-serif;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#navbar {
+    height: 4em;
+    border: 1px solid purple;
+    display: flex;
+}
+
+#navbar * {
+    display: inline;
+}
+
+#navbar li {
+    margin: 2.25em;
+}
+
+#nav a {
+    text-decoration: none;
+    font-size: 1em;
+    align-self: flex-end;
+}
+
+#logo {
+    float: left;
+    width: 29%;
+    height: 3em;
+    background-color: blue;
+}
+
+#nav {
+    float: left;
+    width: 50%;
+    height: 3em;
+    display: flex;
+    background-color: red;
+}
+
+#nav li {
+    margin: 2.25em;
+}
+
+#nav a {
+    text-decoration: none;
+    font-size: .8em;
+    align-self: flex-end;
+}
+
+#menu_icon {
+    float: left;
+    display: flex;
+    width: 21%;
+    height: 3em;
+    background-color: yellow;
+}
+
+.fas {
+    margin-left: auto;
+    align-self: flex-end;
+}
+
+#main-content {
+    height: auto;
+    border: 1px solid red;
+    
+}
+
+#content {
+    background-color: green;
+    float: left;
+    width: 50%;
+    height: auto;
+    margin: 2em 0 0 0;
+    padding: 1em 0;
+}
+
+#content h1 {
+    font-size: 4rem;
+    padding: .2em;
+    font-weight:500;
+}
+
+#content_copy {
+    font-weight:lighter;
+    font-size: 1.3em;
+    padding: .9em 2.5em .9em .9em;
+}
+
+#signup_form {
+    background-color: orange;
+    float: left;
+    width: 50%;
+    height: auto;
+    padding: 1em 0 2.5em 0;
+    margin: 2em 0 0 0;
+    text-align: center;
+}
+
+#signup_form h3 {
+    font-size: 1.25em;
+    text-align: center;
+    font-weight: 400;
+    padding-bottom: 1.5em;
+}
+
+#signup_form input {
+    background-color: rgba(255, 255, 255, .1);
+    width: 20em;
+    height: 2em;
+    padding: .5em;
+    font-size: 1.2em
+}
+
+::placeholder {
+    color: rgba(255, 255, 255, .6);
+}
+
+#signup_form button {
+    background-color: #4995ce;
+    width: 21.25em;
+    height: 3em;
+    font-size: 1.2em;
+}
+
+#terms_info{
+    font-size: 1.1em;
+    text-align: center;
+    color: grey;
+    padding: 1em 5em 0 5em
+}
+
+#terms_info a{
+    text-decoration: none;
+    display: block;
+}
+
+#footer {
+    height: auto;
+    border: 1px solid purple;
+}
+
+#footer * {
+    display: inline;
+    padding: 0;
+}
+
+#copyright {
+    background-color: yellow;
+    float: left;
+    width: 50%;
+    font-size: 1rem;
+    text-align: left;
+}
+
+#footer_nav {
+    background-color: green;
+    float: left;
+    width: 50%;
+    height: 3em;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 425px) {
+
+    body {
+        width: auto;
+        height: 100%;
+        background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("img/background.png");
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        font-family: "Roboto", san-serif;
+    }
+
+    #logo {
+        width: 40%;
+        background-color: blue;
+    }
+
+    #nav {
+        visibility: hidden;
+        background-color: red;
+    }
+    
+    #menu_icon {
+        width: 40%;
+        display: flex;
+        background-color: yellow;
+    }
+
+    .fas {
+        margin-left: auto;
+        align-self: flex-end
+    }
+    
+    #main-content {
+        height: 20em;
+        border: 1px solid red;
+        
+    }
+    
+    #content {
+        background-color: green;
+        width: 100%;
+        height: auto;
+        margin: 0 0 3em 0;
+        font-weight:lighter;
+        font-size: 1em;
+    }
+
+    #content h1 {
+        font-size: 3rem;
+        padding-bottom: .2em;
+        font-weight:500;
+    }
+    
+    #signup_form {
+        background-color: orange;
+        width: 100%;
+        height: auto;
+        margin: 0;
+    }
+    
+    #footer {
+        height: 3em;
+        border: 1px solid purple;
+    }
+    
+    #copyright {
+        background-color: yellow;
+        width: 100%;
+    }
+    
+    #footer_nav {
+        background-color: green;
+        width: 100%;
+    }
+
+
+}
+
+
+

@@ -26,8 +26,18 @@
         text-align: right;  
     }
 
+    #content {
+        float: none;
+        padding: 0 20rem 0;
+        margin-top: none;
+        width: 30rem;
+        font-weight:lighter;
+        font-size: 1.25rem;
+    }
+
     #signup_form {
-        align-self: center;
+        float:none;
+        display: block;
     }
 
 } 
@@ -117,6 +127,7 @@ button {
     font-weight:lighter;
     font-size: 1.25rem;
 }
+
 h1 {
     font-size: 4.5rem;
     padding-bottom: 1.4rem;
