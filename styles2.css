@@ -52,7 +52,7 @@ body {
 
 #logo {
     float: left;
-    width: 29%;
+    width: 31%;
     height: 3em;
 }
 
@@ -61,7 +61,7 @@ body {
     width: 52%;
     height: 3em;
     display: flex;
-    background-color: red;
+    align-self: flex-end;
 }
 
 #nav li {
@@ -71,13 +71,12 @@ body {
 #nav a {
     text-decoration: none;
     font-size: 1em;
-    align-self: flex-end;
 }
 
 #menu_icon {
     float: left;
     display: flex;
-    width: 19%;
+    width: 17%;
     height: 3em;
     padding-right: 2em;
 }
@@ -89,7 +88,8 @@ body {
 
 #main-content {
     height: auto;
-    margin: 3em 0 0 0;
+    margin: 3em 4em 0 0;
+    padding: 3em 0 0 0;
     border: 1px solid transparent;
 }
 
@@ -97,20 +97,20 @@ body {
     float: left;
     width: 48%;
     height: auto;
-    margin: 2em 2em 0 0;
+    margin: 1em 2em 0 0;
     padding-bottom: 3em;
 }
 
 #content h1 {
     font-size: 2.5em;
-    padding: 0 0 0 2.7em;
-    font-weight:500;
+    padding: 0 0 0 2em;
+    font-weight: 500;
 }
 
 #content_copy {
     font-weight:lighter;
     font-size: 1em;
-    padding:  1em 3em 0 6.8em;
+    padding:  1em 3em 0 5.2em;
 }
 
 #signup_form {
@@ -118,7 +118,7 @@ body {
     width: 48%;
     height: auto;
     padding: 0 0 2.5em 0;
-    margin: 1em 0 0 0;
+    margin: 0 0 0 .2em;
     text-align: center;
 }
 
@@ -139,14 +139,20 @@ body {
 }
 
 ::placeholder {
-    color: rgba(255, 255, 255, .6);
+    color: rgba(255, 255, 255, .8);
 }
 
-.form-button {
+button {
     background-color: #4995ce;
-    width: 22em;
+    width: 21.2em;
     height: 3em;
     font-size: 1em;
+    border: none;
+    border-radius: 0 0 .2em .2em;
+}
+
+#top {
+    border-radius: .2em .2em 0 0;
 }
 
 #terms_info{
@@ -163,7 +169,7 @@ body {
 
 #footer {
     height: auto;
-    margin: 26em 0 0 0;
+    margin: 31em 0 0 0;
 }
 
 #footer * {
@@ -200,11 +206,12 @@ body {
 @media screen and (max-width: 480px) {
 
     body {
-        height: 100%;
+        width: 100%;
+        height: auto;
         background: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url("img/background.png");
         background-position: center center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: auto 150%;
         font-family: "Roboto", san-serif;
     }
 
@@ -233,13 +240,14 @@ body {
 
     .fas {
         margin-left: auto;
-        align-self: center;
+        align-self:flex-end;
     }
     
     #main-content {
         height: auto;
         width: 100%;
-        padding: 0 0 0 .5em;
+        padding: 0 0 0 1em;
+        margin: .5em 0 0 0;
     }
     
     #content {
@@ -251,7 +259,7 @@ body {
     }
 
     #content h1 {
-        font-size: 3em;
+        font-size: 3.2em;
         padding: 0 0 .4em 0;
         font-weight: 400;
         line-height: 1.1em;
@@ -260,14 +268,19 @@ body {
     #content_copy {
         font-weight:lighter;
         font-size: 1.3em;
-        padding: 0 .2em;
+        margin: 0 2em 0 0;
+        padding: 0;
+    }
+
+    form {
+        padding-bottom: 1em;
     }
 
     #signup_form {
         width: 100%;
         height: auto;
         margin: 0;
-        padding: .5em 0 .5em 0;
+        padding: 1em 0 1em 0;
     }
 
     #signup_form h3 {
@@ -278,9 +291,17 @@ body {
     }
 
     #signup_form input {
-        width: 14em;
+        width: 16em;
         font-size: 75%;
-        
+    }
+    button {
+        background-color: #4995ce;
+        width: 17.1em;
+        font-size: 75%;
+    }
+
+    ::placeholder {
+        color: rgba(255, 255, 255, 1);
     }
 
     #terms_info{
@@ -297,15 +318,15 @@ body {
     }
     
     #copyright {
-        background-color: blue;
         width: 100%;
-        margin-left: 10em;
+        margin: auto;
         text-align: center;
         font-size: .2em;
+        padding-bottom: 2em;
+        float: left;
     }
 
     #footer_nav {
-        background-color: green;
         width: 100%;
         font-size: .2em;
     }
